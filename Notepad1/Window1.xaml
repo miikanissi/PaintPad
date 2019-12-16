@@ -1,0 +1,35 @@
+﻿<Window x:Class="Notepad1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad1"
+        mc:Ignorable="d"
+        Title="Font" Height="350" Width="300">
+    <Grid>
+
+        <Button Content="OK" HorizontalAlignment="Left" Margin="188,207,0,0" VerticalAlignment="Top" Height="32" Width="60" IsDefault="True" Click="Button_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="188,253,0,0" VerticalAlignment="Top" Height="33" Width="60" IsCancel="True"/>
+        <ListBox x:Name="listBox1" Margin="24,32,117,28">
+            <ListBoxItem Content="Font 9" FontSize="9"></ListBoxItem>
+            <ListBoxItem Content="Font 10" FontSize="10"></ListBoxItem>
+            <ListBoxItem Content="Font 11" FontSize="11"></ListBoxItem>
+            <ListBoxItem Content="Font 12" FontSize="12"></ListBoxItem>
+            <ListBoxItem Content="Font 13" FontSize="13"></ListBoxItem>
+            <ListBoxItem Content="Font 14" FontSize="14"></ListBoxItem>
+            <ListBoxItem Content="Font 15" FontSize="15"></ListBoxItem>
+            <ListBoxItem Content="Font 16" FontSize="16"></ListBoxItem>
+            <ListBoxItem Content="Font 17" FontSize="17"></ListBoxItem>
+            <ListBoxItem Content="Font 18" FontSize="18"></ListBoxItem>
+            <ListBoxItem Content="Font 19" FontSize="19"></ListBoxItem>
+            <ListBoxItem Content="Font 20" FontSize="20"></ListBoxItem>
+            <ListBoxItem Content="Font 22" FontSize="22"></ListBoxItem>
+            <ListBoxItem Content="Font 24" FontSize="24"></ListBoxItem>
+            <ListBoxItem Content="Font 26" FontSize="26"></ListBoxItem>
+            <ListBoxItem Content="Font 28" FontSize="28"></ListBoxItem>
+            <ListBoxItem Content="Font 30" FontSize="30"></ListBoxItem>
+            <ListBoxItem Content="Font 34" FontSize="34"></ListBoxItem>
+            <ListBoxItem Content="Font 38" FontSize="38"></ListBoxItem>
+        </ListBox>
+    </Grid>
+</Window>

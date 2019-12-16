@@ -1,0 +1,92 @@
+﻿<Window x:Class="Notepad1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad1"
+        xmlns:p="clr-namespace:Notepad1.Properties"
+        mc:Ignorable="d"
+        Title="{x:Static p:Resources.Title}" Height="450" Width="800" KeyDown="Window_KeyDown">
+    <DockPanel>
+        <Menu x:Name="menu1" DockPanel.Dock="Top">
+            <MenuItem Header="{x:Static p:Resources.File}">
+                <MenuItem x:Name="menuOpen" Header="{x:Static p:Resources.Open}" Click="menuOpen_Click"/>
+                <MenuItem x:Name="menuSave" Header="{x:Static p:Resources.Save}" Click="menuSave_Click"/>
+                <MenuItem x:Name="menuSaveAs" Header="{x:Static p:Resources.SaveAs}" Click="menuSaveAs_Click"/>
+                <MenuItem x:Name="menuPrint" Header="{x:Static p:Resources.Print}" Click="menuPrint_Click"/>
+                <MenuItem Header="{x:Static p:Resources.Exit}" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="{x:Static p:Resources.Edit}">
+                <MenuItem x:Name="menuUndo" Header="{x:Static p:Resources.Undo}" Click="menuUndo_Click"/>
+                <MenuItem x:Name="menuCopy" Header="{x:Static p:Resources.Copy}" Click="menuCopy_Click"/>
+                <MenuItem x:Name="menuPaste" Header="{x:Static p:Resources.Paste}" Click="menuPaste_Click"/>
+                <MenuItem x:Name="menuCut"  Header="{x:Static p:Resources.Cut}" Click="menuCut_Click"/>
+            </MenuItem>
+            <MenuItem Header="{x:Static p:Resources.Format}">
+                <MenuItem x:Name="menuFont" Header="{x:Static p:Resources.Fontti}" Click="menuFont_Click"/>
+            </MenuItem>
+            <MenuItem Header="{x:Static p:Resources.View}"/>
+            <MenuItem Header="{x:Static p:Resources.Help}">
+                <MenuItem Header="{x:Static p:Resources.About}"/>
+                <MenuItem x:Name="menuCalc" Header="{x:Static p:Resources.Calculator}" Click="menuCalc_Click"/>
+                <MenuItem Header="{x:Static p:Resources.Language}">
+                    <MenuItem x:Name="englishCulture" Header="{x:Static p:Resources.English}" Click="englishCulture_Click"/>
+                    <MenuItem x:Name="finnishCulture" Header="{x:Static p:Resources.Finnish}" Click="finnishCulture_Click"/>
+                    <MenuItem x:Name="swedishCulture" Header="{x:Static p:Resources.Swedish}" Click="swedishCulture_Click"/>
+                </MenuItem>
+
+            </MenuItem>
+            <MenuItem x:Name="menuPen" Width="26" Click="MenuItem_Click_2">
+                <MenuItem.Icon>
+                    <Image Source="pen-icon2.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="brushSize" Width="26" Click="brushSize_Click">
+                <MenuItem.Icon>
+                    <Image Source="smaller.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="ellipse1" Width="26" Click="ellipse1_Click">
+                <MenuItem.Icon>
+                    <Image Source="ellipse.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="colorBlack" Width="26" Click="colorBlack_Click">
+                <MenuItem.Icon>
+                    <Image Source="black.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="colorGrey" Width="26" Click="colorGrey_Click">
+                <MenuItem.Icon>
+                    <Image Source="gray.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="colorWhite" Width="26" Click="colorWhite_Click">
+                <MenuItem.Icon>
+                    <Image Source="white.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="colorRed" Width="26" Click="colorRed_Click">
+                <MenuItem.Icon>
+                    <Image Source="red.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="colorBlue" Width="26" Click="colorBlue_Click">
+                <MenuItem.Icon>
+                    <Image Source="blue.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem x:Name="colorYellow" Width="26" Click="colorYellow_Click">
+                <MenuItem.Icon>
+                    <Image Source="yellow.png"/>
+                </MenuItem.Icon>
+            </MenuItem>
+            
+        </Menu>
+        <Grid x:Name="grid">
+            <TextBox x:Name="textBox1" AcceptsReturn="True" AcceptsTab="True"/>
+            <Canvas x:Name="Surface" MouseLeftButtonDown="Canvas_MouseLeftButtonDown" MouseMove="Canvas_MouseMove" Background="Transparent" IsHitTestVisible="False" Cursor="Pen"/>
+        </Grid>
+    </DockPanel>
+</Window>
+    

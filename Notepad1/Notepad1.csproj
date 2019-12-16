@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>Notepad1.LocApp</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="big.png" />
+    <None Remove="black.png" />
+    <None Remove="blue.png" />
+    <None Remove="ellipse.png" />
+    <None Remove="gray.png" />
+    <None Remove="pen-icon.png" />
+    <None Remove="pen-icon2.png" />
+    <None Remove="red.png" />
+    <None Remove="small.png" />
+    <None Remove="smaller.png" />
+    <None Remove="white.png" />
+    <None Remove="yellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="big.png" />
+    <Resource Include="black.png" />
+    <Resource Include="blue.png" />
+    <Resource Include="ellipse.png" />
+    <Resource Include="gray.png" />
+    <Resource Include="pen-icon.png" />
+    <Resource Include="pen-icon2.png" />
+    <Resource Include="red.png" />
+    <Resource Include="small.png" />
+    <Resource Include="smaller.png" />
+    <Resource Include="white.png" />
+    <Resource Include="yellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <CustomToolNamespace></CustomToolNamespace>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.sv-SE.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

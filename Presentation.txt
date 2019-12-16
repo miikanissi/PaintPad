@@ -1,0 +1,26 @@
+                    					PaintPad -Presentation
+ 
+I wanted to combine a simple NotePad I made as part of a User Interfaces course with some Paint-like features. So here's PaintPad. 
+
+PaintPad Features:
+	- Ability to Open and Edit text files and .png files. If a .png file is opened only the paint features are available. 
+	- Ability to save your text files and an option to save text + paint as a .png file. Ctrl + S shortcut works. 
+	- Text editor features:
+		- Very minimal notepad like features. Ability to change Font Size from Format. 
+		- Copy & Paste work as well as Undo. Ctrl + shortcuts are also available. 
+	- Paint canvas features:
+		- Ability to enable/disable painting by selecting the pen icon. This also disables/enables text editing. 
+		
+		
+		- You can choose between 3 brush sizes by pressing the dot icon. 
+
+		
+		- You can choose between 6 colors. White works as an eraser. 
+	
+	
+		- You can select the circle to enable/disable Ellipse drawing tool. You can draw ellipses with it.
+
+
+In addition to PaintPad you can change the language from the Help -menu. This takes advantage of Resources. 
+Has English (default), Finnish & Swedish. 
+There is also a calculator which you can access from the Help menu. This was an assignment done during my course. 

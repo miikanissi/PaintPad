@@ -1,0 +1,27 @@
+                    					PaintPad -Esitys
+ 
+Halusin lopputyössä yhdistää NotePadin, jonka teimme 2. tehtävässä sekä Paintin kaltaisen sovelluksen, jolla on mahdollista piirtää. 
+Päädyin siis tekemään PaintPadin. 
+
+PaintPad ominaisuudet:
+	- Voit avata ja muokata tekstitiedostoja sekä png kuvatiedostoja. Kuvatiedoston muokkauksessa tekstieditori on poissa käytöstä. 
+	- Tiedostot voi tallentaa tekstietiedostoina, jolloin teksti tallentuu tai .png tiedostona jolloin koko canvaksesta tulee kuvatiedosto. 
+	  Tallentamisessa toimii ctrl + s pikanäppäin.
+	- Tekstieditorin ominaisuudet:
+		- Tekstieditori on hyvin yksinkertainen notepadi. Fontin kokoa voi vaihtaa. ctrl+z = undo. copy. paste. 
+	- Paint canvas:
+		- Canvakseen on mahdollista piirtää kynällä valitsemalla kynän kuvakkeen. Kynän ollessa käytössä tekstiä ei pysty muuttamaan
+		   ja toisinpäin. 
+
+		
+		- Voit valitat kolmen eri kynän paksuuden välillä painamalla valintanäppäintä.
+
+	
+		- Voit valita kuuden eri värin välillä, joista valkoinen toimii myös hyvin pyyhekumina.
+
+
+		- Voit valita Ellipse-työkalun, jonka avulla voit piirtää ympyröitä.
+
+
+PaintPadin lisäksi sovelluksen kielen voi vaihtaa Suomen, Englannin ja Ruotsin välillä valikosta. Myös laskin löytyy toisessa ikkunassa avattavaksi. 
+

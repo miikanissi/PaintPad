@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Notepad1/1.0.0": {
+        "runtime": {
+          "Notepad1.dll": {}
+        },
+        "resources": {
+          "sv-SE/Notepad1.resources.dll": {
+            "locale": "sv-SE"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Notepad1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
